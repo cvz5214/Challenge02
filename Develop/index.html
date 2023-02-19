@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
+    <title>Challenge 02 - Portfolio</title>
 </head>
-
 <body>
-    <h1>Here is a Heading</h1>
+    <header>
+        <h1>Carlos Zaldana</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#links">Links</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div>
+            <h2>"A man's dream will never die!" - <span>Marshall D. Teach</span></h2>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div>
+                <p>
+                    A student learning best practices in coding - HTML, CSS, JavaScript, SQL - hoping to refine my skills to be able to develop websites and databases for personal use and/or for a job. On my down time, I enjoy watching movies and tv shows, and also playing video games.
+                </p>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Work</h2>
+            <div class="flex-container">
+                <div class="item chainsaw"></div>
+                <div class="item demon"></div>
+                <div class="item jujutsu"></div>
+                <div class="item one"></div>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <div>
+                <address class="flex-container">
+                    <a href="tel:+15555555555">215.555.555</a>
+                    <a href="mailto:user@mail.com">user@mail.com</a>
+                    <a href="https://github.com/cvz5214/Challenge02">GitHub</a>
+                </address>
+            </div>
+        </section>
+    </main>
 </body>
+</html>

@@ -1,3 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: rgb(188,102,87);
+    --secondary: rgb(175,150,156);
+    --title: rgb(143,122,161);
+    --text: rgb(42,28,53);
+    --text_secondary: rgb(21,8,17);
+}
+
 body {
-    background-color: paleturquoise;
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', 'Verdana', Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+header h1 {
+    color: var(--text_secondary);
+    padding: 5px 1% 5px 6%;
+    font-size: 3em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 5px 10px;
+    color: var(--text);
+    margin-right: 10px;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--bg);
+    background-position: bottom;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.banner {
+    background-image: url("./Images/Smoke.jpg");
+    background-position: center;
+    text-align: center;
+    min-height: 15vh;
+    padding: 5%,0,5%,0;
+}
+
+.banner h2 {
+    color: var(--title);
+    padding: 2% 0px 2% 0px;
+}
+
+.banner span {
+    background-color: var(--secondary);
+    color: var(--text_secondary);
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#about {
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+#work {
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+.item {
+    display: flex;
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.chainsaw {
+    background-image: url(./Images/Chainsaw.webp)
+}
+
+.demon {
+    background-image: url(./Images/Demon.png)
+}
+
+.jujutsu {
+    background-image: url(./Images/Jujutsu.avif)
+}
+
+.one {
+    background-image: url(./Images/One.jpg)
+}
+
+#links {
+    padding: 1vh 3vw 1vh 3vw;
 }
